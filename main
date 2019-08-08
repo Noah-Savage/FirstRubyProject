@@ -1,0 +1,23 @@
+class WalmartGreeter
+     def initialize(name = "AI")
+     @name = name
+     end
+		 			#Hello function
+          def hello
+          puts "Hey #{@name}!"
+          end
+					#Goodbye function
+          def goodbye
+            puts "Excuse me #{@name}, can I please see your receipt?"
+          end
+end
+
+puts "What would you like to say to the greeter?"
+message = gets
+greeter = WalmartGreeter.new("Albert")
+#Give greeter appropriate greeting
+if(message == "hello")
+	greeter.hello
+else
+	greeter.goodbye
+end
