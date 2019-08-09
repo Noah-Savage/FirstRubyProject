@@ -10,6 +10,10 @@ class WalmartGreeter
           def goodbye
             puts "Excuse me #{@name}, can I please see your receipt?"
           end
+					#What if you didn't pay for something?
+					def callTheCops
+						puts "THIS ITEM WAS NOT ON YOUR RECEIPT, PLEASE STAY HERE WHILE SECURITY IS NOTIFIED."
+					end
 end
 
 puts "What would you like to say to the greeter?"
@@ -19,5 +23,5 @@ greeter = WalmartGreeter.new("Albert")
 if(message == "hello")
 	greeter.hello
 else
-	greeter.goodbye
+	greeter.callTheCops
 end
